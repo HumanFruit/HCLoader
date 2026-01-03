@@ -1,3 +1,12 @@
+local exec_name = identifyexecutor()
+
+if exec_name == "Xeno" or exec_name == "Solara" then
+    game:GetService("Players").LocalPlayer:Kick("Unsupported Executor!")
+    return
+else
+    print("hi")
+end
+
 local gameId = game.GameId
 
 if gameId == 8091056274 then
@@ -6,4 +15,5 @@ if gameId == 8091056274 then
 else
     game:GetService("Players").LocalPlayer:Kick("Game unsupported!")
     return
+
 end
